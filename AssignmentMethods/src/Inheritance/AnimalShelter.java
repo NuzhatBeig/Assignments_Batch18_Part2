@@ -1,9 +1,12 @@
 package Inheritance;
 
+import Inheritance.tigersclass.American;
+import Inheritance.tigersclass.Tiger;
+
 public class AnimalShelter {
 
 	public static void main(String[] args) {
-		Tiger tiger = new Tiger("Siberian", "Russia");
+		/*Tiger tiger = new Tiger("Siberian", "Russia");
 		System.out.println(tiger.getName());
 		tiger.setSound("Roar");
 		System.out.println(tiger.getSound());
@@ -21,7 +24,23 @@ public class AnimalShelter {
 	
 		Hounds hound = new Hounds("Leopard Dogs","USA");
 		System.out.println(hound.getColor());
-
+		
+		Animals animals = new Tiger("Siberian", "Russia");
+		System.out.println(animals.getName());*/
+		
+		Animals ta = new American("Siberian", "Russia");
+		printInfo(ta);
+		ta.height();
+		
+		Animals ha = new Hounds("Leopard Dogs","USA");
+		printInfo(ha);
+		
+		
 	}
-
+		
+		public static void printInfo(Animals animals){
+			System.out.println(animals.getName());
+			System.out.println(animals.getHabitat());
+			System.out.println(animals.getColor());	
+	}
 }

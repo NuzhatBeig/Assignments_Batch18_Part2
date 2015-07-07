@@ -23,10 +23,16 @@ public void setBreed(String breed) {
 public void setColor(String color) {
 	this.color = color;
 }*/
+@Override
+public void height() {
+	System.out.println(" Height of hound is 10");
+	
+}
 
+/*
 @Override  //if subclass has same method as a super class
 public String getColor() {
 	return "Color of hound is black";
 }
-
+*/
 }

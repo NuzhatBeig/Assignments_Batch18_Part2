@@ -1,6 +1,6 @@
 package Inheritance;
 
-public class Animals {
+public abstract class Animals {
  private String name;
  private String habitat;
  private int weight;
@@ -74,7 +74,12 @@ public void setColor(String color) {
 	this.color = color;
 }
 
+public abstract void height(); 
 
+@Override
+public String toString() {
+	return " name = " + name + " habitat = " + habitat;
+}
 
 
 }

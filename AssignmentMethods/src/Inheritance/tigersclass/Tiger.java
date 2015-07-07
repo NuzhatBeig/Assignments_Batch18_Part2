@@ -1,6 +1,8 @@
-package Inheritance;
+package Inheritance.tigersclass;
 
-public class Tiger extends Animals {
+import Inheritance.Animals;
+
+public abstract class Tiger extends Animals {
 	
 public Tiger(String name, String  habitat) {
 	
@@ -23,7 +25,17 @@ public String getStripetype() {
 public void setStripetype(String stripetype) {
 	this.stripetype = stripetype;
 }
-
-
+/*
+@Override  //if subclass has same method as a super class
+public String getColor() {
+	return "Color of tiger is brown with black and white stripes";
+}
+*/
+/*
+@Override
+public void height(){
+	System.out.println(" Height is 13");
+	
+}*/
 
 }
